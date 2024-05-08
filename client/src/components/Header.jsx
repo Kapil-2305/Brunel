@@ -6,6 +6,7 @@ import Rocket from '../assets/Rocket.png'
 import sparks from '../assets/sparks.png'
 import Slider from './Slider'
 import Secondary_CTA from './Secondary_CTA'
+import { FaArrowRight } from 'react-icons/fa'
 
 const Header = () => {
     return (
@@ -66,7 +67,7 @@ const Header = () => {
 
                     <div>
                         <Slider />
-                        <Secondary_CTA text={"Explore More"} />
+                        <Secondary_CTA text={"Explore More"} icon={<FaArrowRight/>}/>
                     </div>
                 </div>
             </div>
