@@ -4,13 +4,13 @@ import Girl_Image from '../assets/girl_image.png'
 import bag_logo from '../assets/bag-logo.png'
 import Rocket from '../assets/Rocket.png'
 import sparks from '../assets/sparks.png'
-import Slider from './Slider'
 import Secondary_CTA from './Secondary_CTA'
 import { FaArrowRight } from 'react-icons/fa'
+import Slider from './Slider'
 
 const Header = () => {
     return (
-        <div>
+        <div className=''>
             <div className='flex items-center justify-center pt-10'>
                 <div className='flex flex-col items-center gap-2 max-w-xl'>
                     <div className='covered-by-your-grace text-[#2DA950] text-4xl'>
@@ -22,9 +22,9 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className='relative pt-4'>
+            <div className='relative pt4'>
                 <img className='-z-20 absolute right-0' src={Grid} />
-                <div className='flex gap-2 items-center justify-center'>
+                <div className='flex gap-56 items-center justify-center pt-24'>
                     <div className='relative'>
                         <img className='rounded-3xl' src={Girl_Image} />
 
@@ -65,7 +65,7 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className='flex flex-col gap-32'>
                         <Slider />
                         <Secondary_CTA text={"Explore More"} icon={<FaArrowRight/>}/>
                     </div>
