@@ -7,7 +7,7 @@ import Secondary_CTA from './Secondary_CTA'
 const Navbar = () => {
     return (
         <div className='flex justify-between items-center border-2 rounded-full pl-[52px] pr-[21px] py-[17px] m-4'>
-            <div>
+            <div className='cursor-pointer'>
                 <img src={vector} />
             </div>
             <div className='flex gap-2'>

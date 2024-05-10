@@ -24,7 +24,7 @@ const Header = () => {
 
             <div className='relative pt4'>
                 <img className='-z-20 absolute right-0' src={Grid} />
-                <div className='flex gap-56 items-center justify-center pt-24'>
+                <div className='flex gap-72 items-center justify-center pt-24'>
                     <div className='relative'>
                         <img className='rounded-3xl' src={Girl_Image} />
 
