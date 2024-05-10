@@ -9,7 +9,7 @@ const Combo = ({question, answer, index}) => {
     }
 
     return (
-        <div>
+        <div className='flex flex-col gap-2'>
             <div className='flex justify-between'>
                 <div className='font-semibold'>
                     {question}

@@ -29,8 +29,8 @@ const questions = [
 
 const Questions = () => {
   return (
-    <div className='relative m-12 mt-36 bg-[#E8EEE7] p-24 rounded-3xl flex justify-between'>
-        <div className='absolute'>
+    <div className='relative m-12 mt-36 bg-[#E8EEE7] p-24 rounded-3xl flex justify-between h-[685px]'>
+        <div className='absolute left-6 -bottom-12'>
             <img src={Union} />
         </div>
         <div className='flex flex-col gap-2'>
@@ -41,10 +41,10 @@ const Questions = () => {
                 Ask Questions
             </div>
         </div>
-        <div className='max-w-96'>
+        <div className='lg:w-[721px] md:w-[521px] mt-6 overflow-hidden'>
             {
                 questions.map((qe, index)=>(
-                    <div className={`m-4 ${index != questions.length-1 && "border-b-2 border-[#D7D7D7]"}`}>
+                    <div className={`mx-6 py-6 ${index != questions.length-1 && "border-b-2 border-[#D7D7D7]"}`}>
                         <Combo question={qe.question} answer={qe.answer} index={index}/>
                     </div>
                 ))
