@@ -8,7 +8,6 @@ import emailjs from 'emailjs-com';
 const user_id = import.meta.env.VITE_YOUR_USER_ID;
 const service_id =import.meta.env.VITE_YOUR_SERVICE_ID;
 const template_id = import.meta.env.VITE_YOUR_TEMPLATE_ID;
-console.log(user_id, service_id, template_id);
 
 const sendEmail = (name, email) => {
     // Configure emailjs-com
@@ -22,7 +21,7 @@ const sendEmail = (name, email) => {
         reply_to: email
     };
 
-    emailjs.send(service_id, template_id, templateParams)
+    emailjs.send('service_tctznif', 'template_si9eld8', templateParams)
       .then((response) => {
         console.log('Email sent successfully!', response.status, response.text);
       })
