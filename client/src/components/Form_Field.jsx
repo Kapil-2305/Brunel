@@ -12,7 +12,7 @@ console.log(user_id, service_id, template_id);
 
 const sendEmail = (name, email) => {
     // Configure emailjs-com
-    emailjs.init(user_id);
+    emailjs.init('PRsKVVv82VoPnaSV7');
 
     const templateParams = {
         to_name: 'Brunel Team',
