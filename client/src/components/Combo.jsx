@@ -10,16 +10,16 @@ const Combo = ({question, answer, index}) => {
 
     return (
         <div className='flex flex-col gap-2'>
-            <div className='flex justify-between'>
-                <div className='font-semibold'>
-                    {question}
-                </div>
-                <button onClick={()=> toggle(active)}>
+            <button onClick={()=> toggle(active)}>
+                <div className='flex justify-between'>
+                    <div className='font-semibold'>
+                        {question}
+                    </div>
                     {
                         active ? <FaMinus /> : <FaPlus />
                     }
-                </button>
-            </div>
+                </div>
+            </button>
             {
                 active ? <div className='text-[#617275] text-sm font-light lowercase'>{answer}</div> : <div></div>
             }
